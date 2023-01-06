@@ -1,0 +1,40 @@
+.project-sec div {
+  padding: 7px;
+  background-color: rgba(47, 131, 180, 0.2);
+  margin: 10px;
+  box-shadow: 0 5px 4px 0 #585c5f;
+  border-radius: 5px;
+}
+
+.project-sec div figure ul li {
+  list-style: none;
+}
+
+.project-sec div img {
+  padding: 10px;
+}
+
+.project-link {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.project-sec .project-link a {
+  padding: 5px;
+  margin: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  box-shadow: 0 5px 5px 0 #797c7e;
+  border: 1px solid grey;
+}
+
+.project-sec .project-link a:hover {
+  background-color: #10f523;
+}
+
+@media (max-width: 1000px) {
+  .project-sec div figure {
+    display: block;
+  }
+}

@@ -1,0 +1,144 @@
+.header{
+   background-color: #2b3555;
+   padding-top: 20px;
+   
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+    
+}
+
+.brand-title{
+    font-size: 1.9em;
+    margin: .5em;
+    display: absolute;
+    font-family: 'Playball', cursive; 
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.navbar-links ul li {
+    list-style: none;
+   
+}
+
+
+.navbar-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background: linear-gradient(to bottom, #33ccff 0%, #7d62f3 100%);
+
+    
+}
+
+.navbar-links ul li a:hover{
+    color: #000;
+}
+
+
+.toggle-button{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 25px;
+    border: 1px solid #0d0d27;
+    border-radius: 5px;
+  
+
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+
+
+/* @media query on small viewport  */
+@media (max-width: 600px){
+
+    .toggle-button{
+        display: flex;
+        top: 10px;
+        right: 10px;
+
+    }
+    .navbar-links{
+        display: none;
+       
+    }
+
+    .navbar-toggle-div{
+        width: 100%;
+        
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        display: block;
+    
+    }
+
+    .navbar-links ul li {
+        margin-bottom: 7px;
+        text-align: center;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem
+        
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+
+
+}
